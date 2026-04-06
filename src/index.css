@@ -1,0 +1,217 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f0ff;
+}
+
+/* CONTAINER */
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 10px;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #6a0dad, #b57edc);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header p {
+  margin-top: 5px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  margin-top: 10px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  background: linear-gradient(135deg, #6a0dad, #b57edc);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs button:hover {
+  background: #b57edc;
+}
+
+/* CARD */
+.card {
+  background: white;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* INPUTS */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* TEXTAREA */
+textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+/* BUTTONS */
+button {
+  background: #b57edc;
+  border: none;
+  padding: 14px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #9c5cc5;
+}
+
+/* TOTAL */
+h3 {
+  text-align: center;
+  margin-top: 10px;
+  color: #6a0dad;
+}
+
+/* LISTA */
+.card p {
+  margin: 5px 0;
+}
+
+/* MOBILE FIRST */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .header p {
+    font-size: 12px;
+  }
+
+  .tabs button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 900px) {
+  .app {
+    padding: 20px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 901px) {
+  .app {
+    padding: 30px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1;
+}
+
+.joia-item {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.joia-item input {
+  flex: 1;
+}
+
+.remove-btn {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 0 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.remove-btn:hover {
+  background: #e60000;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+}
+
+.actions button:first-child {
+  background: #6a0dad;
+  color: white;
+}
+
+.actions button:last-child {
+  background: white;
+  color: #6a0dad;
+  border: 1px solid #6a0dad, ;
+}
